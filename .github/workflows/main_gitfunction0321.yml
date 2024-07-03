@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy dotnet core app to Azure Function App - gitfunction0321
+name: Build and deploy dotnet core app to Azure Function App - uchi-WinTest-Node
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'gitfunction0321'
+          app-name: 'uchi-WinTest-Node'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_156B573895E645EC950E0A422849390A }}
